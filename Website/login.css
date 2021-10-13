@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(background2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.navbar li.active a{
+    color: orange;
+}
+.content{
+    width: 100%;
+    position: center;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+footer{
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 2px;
+    color: #fff;
+}
+.footer-content{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 1px auto;
+    line-height: 20px;
+    font-size: 14px;
+}
+#login{
+    float: center;
+    margin-top: -90px;
+    padding: 50px 400px;
+    width: 50%;
+    overflow: hidden;
+    
+}
+#login h3{
+    font-family: "Times New Roman", serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 1px;
+    margin-left: -50px;
+}
+#border{
+    width: 100px;
+    height: 5px;
+    background: darkcyan;
+    margin: 5px auto;
+    float: center;
+}
+#login input{
+    display: block;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 20px 0;
+    margin-left: 55px;
+    border: 0;
+    background: #111;
+    padding: 10px 20px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+#login button{
+    position: relative;
+    float: center;
+    border: 0;
+    background: #34495e;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Times New Roman", serif;
+    font-size: 12px;
+    opacity: 80%; 
+    margin-left: 260px;
+}

@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Cart.css">
+  <title>Basket</title>
+</head>
+
+<body>
+  <main>
+      <div class="banner"> 
+      <div class="navbar">
+            <img src="images/logo1.png" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Registration.html">Registration</a></li>
+                <li><a href="Login.html">Log In</a></li>
+                <li><a href="Catalogue.html">Catalogue</a></li>
+                <li class="active"><a href="">Cart</a></li>
+            </ul>
+        </div>
+        <div class="main_box">
+        <div class="left_navbar">
+            <ul>
+                <li><a href="UnderArmour.html">Under Armour</a></li>
+                <li><a href="Nike.html">Nike</a></li>
+                <li><a href="Adidas.html">Adidas</a></li>
+                <li><a href="Reebok.html">Reebok</a></li>
+            </ul>
+        </div>
+        </div>
+      </div>  
+    <div class="basket">
+      <div class="basket-module">
+        <label for="promo-code">Enter a promotional code</label>
+        <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+        <button class="promo-code-cta">Apply</button>
+      </div>
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="price">Price</li>
+          <li class="quantity">Quantity</li>
+          <li class="subtotal">Subtotal</li>
+        </ul>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="images/ua6.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">4</span> x Under Armour</strong> Curry 1 MVP</h1>
+            <p><strong>Size 18</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">3,999</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">15,996</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="images/nike3.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">1</span> x Nike</strong> PG 13</h1>
+            <p><strong>Size 13</strong></p>
+            <p>Product Code - 235331934</p>
+          </div>
+        </div>
+        <div class="price">3,800</div>
+        <div class="quantity">
+          <input type="number" value="1" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">3,800</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">19,796</div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promotion</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <div class="summary-delivery">
+          <select name="delivery-collection" class="summary-delivery-selection">
+              <option value="0" selected="selected">Select Collection or Delivery</option>
+             <option value="collection">Collection</option>
+             <option value="first-class">Sports Shoe Rack 1st Class</option>
+             <option value="second-class">Sports Shoe Rack 2nd Class</option>
+             <option value="signed-for">Sports Shoe Rack Special Delivery</option>
+          </select>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">19,796</div>
+        </div>
+        <div class="summary-checkout">
+          <button class="checkout-cta">Go to Secure Checkout</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+    <footer>
+        <div class="footer-content">
+            <h3>Sports Shoe Rack</h3>
+            <p>All rights Reserved &copy;2020</p>
+        </div>
+    </footer>
+
+</html>
